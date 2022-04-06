@@ -1,0 +1,266 @@
+
+
+<!-- hehehe :) -->
+<!--  ./X140N -->
+<html>
+	<head>
+	<title>Pawned By ./X140N</title>
+
+<script type="text/javascript">
+var snowmax=30
+var snowcolor=new Array("#000000","#000000","#000000","#000000","#000000")
+var snowtype=new Array("Arial Black","Arial Narrow","Times","Comic Sans MS")
+var snowletter="*"
+var sinkspeed=0.5
+var snowmaxsize=40
+var snowminsize=26
+var snowingzone=1
+
+var snow=new Array()
+var marginbottom
+var marginright
+var timer
+var i_snow=0
+var x_mv=new Array();
+var crds=new Array();
+var lftrght=new Array();
+var browserinfos=navigator.userAgent 
+var ie5=document.all&&document.getElementById&&!browserinfos.match(/Opera/)
+var ns6=document.getElementById&&!document.all
+var opera=browserinfos.match(/Opera/)  
+var browserok=ie5||ns6||opera
+function randommaker(range) {
+rand=Math.floor(range*Math.random())
+return rand
+}
+function initsnow() {
+if (ie5 || opera) {
+marginbottom = document.body.clientHeight
+marginright = document.body.clientWidth
+}
+else if (ns6) {
+marginbottom = window.innerHeight
+marginright = window.innerWidth
+}
+var snowsizerange=snowmaxsize-snowminsize
+for (i=0;i<=snowmax;i++) {
+crds[i] = 0;                      
+lftrght[i] = Math.random()*15;         
+x_mv[i] = 0.03 + Math.random()/10;
+snow[i]=document.getElementById("s"+i)
+snow[i].style.fontFamily=snowtype[randommaker(snowtype.length)]
+snow[i].size=randommaker(snowsizerange)+snowminsize
+snow[i].style.fontSize=snow[i].size
+snow[i].style.color=snowcolor[randommaker(snowcolor.length)]
+snow[i].sink=sinkspeed*snow[i].size/5
+if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+snow[i].posy=randommaker(2*marginbottom-marginbottom-2*snow[i].size)
+snow[i].style.left=snow[i].posx
+snow[i].style.top=snow[i].posy
+}
+movesnow()
+}
+function movesnow() {
+for (i=0;i<=snowmax;i++) {
+crds[i] += x_mv[i];
+snow[i].posy+=snow[i].sink
+snow[i].style.left=snow[i].posx+lftrght[i]*Math.sin(crds[i]);
+snow[i].style.top=snow[i].posy
+if (snow[i].posy>=marginbottom-2*snow[i].size || parseInt(snow[i].style.left)>(marginright-3*lftrght[i])){
+if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+snow[i].posy=0
+}
+}
+var timer=setTimeout("movesnow()",50)
+}
+for (i=0;i<=snowmax;i++) {
+document.write("<span id='s"+i+"' style='position:absolute;top:-"+snowmaxsize+"'>"+snowletter+"</span>")
+}
+if (browserok) {
+window.onload=initsnow
+}
+</script> 	 	<meta property="og:image" content="http://upir.ir/images/svrhyudmqfybztws4ee.png">
+<link rel="icon" href="https://i.ibb.co/Pc9kmwZ/tokyo-ghoul-wattpad-anime-fan-fiction-ghoul-f54a9938e2a2d27a97d49b16dba1df74.png" type="image/jpg">
+<link href="https://fonts.googleapis.com/css?family=Skranji" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Pirata+One" rel="stylesheet">
+	</head>
+<style>
+body{
+
+background: white;
+margin: 0;
+padding: 0;
+font-family:  cursive;
+
+}
+
+.sec{
+
+font-family:   cursive;
+font-size: 30px;
+
+}
+
+.xiaon{
+
+font-family:  cursive;
+font-size: 24px;
+}
+
+.btn1{
+
+font-family:   cursive;
+font-size: 50px;
+color: black;
+background: none;
+border-color: black;
+border-radius: 20px;
+border-width: 2px;
+outline: none;
+margin: 10px;
+width: 190px;
+
+}
+
+.btn2{
+
+font-family:   cursive;
+font-size: 50px;
+color: black;
+background: none;
+border-color: black;
+border-radius: 20px;
+border-width: 2px;
+outline: none;
+margin: 10px;
+width: 200px;
+}
+
+</style>
+
+<body>
+
+<center>
+
+<br><br><br><br>
+
+<br><br>
+
+</body> <center>
+    <img width="480px" height="720px" <img src="https://i.ibb.co/k9Mf71H/Photo-Room-20220110-130942.png alt="images-4" border="0">
+    <h1>DEFACED BY ./X140N<br>your Security Has Fallen<br>Be Secure ..!!</h1><br>
+<font class="sec" color="black">./Message:~</font>
+<br>
+<font class="sec" color="black">hehehe I'm not anonymous<br>A noob eated your security<br>Lol</font>
+<br>
+<audio id="myaudio">
+
+<source src="https://f.top4top.io/m_1637it7sb1.mp3">
+</audio>
+
+<button class="btn1" onclick="playaudio()" type="button">PLAY</button>
+<button class="btn2" onclick="pauseaudio()" type="button">PAUSE</button>
+
+<br>
+<br>
+<font class="xiaon" color="black">©</font>
+<font class="xiaon" color="black"><div>
+ All Rights Reserved by</font>
+
+<br>
+
+<font class="xiaon" color="black">H4X0R X140N</font>
+
+</center>
+
+<script type="text/javascript">
+
+var x = document.getElementById("myaudio");
+
+function playaudio(){
+
+         x.play();
+
+}
+
+function pauseaudio(){
+
+         x.pause();
+
+} 
+alert("This is party")
+alert("./X140N W45 H3R3")
+
+</script>
+
+
+    <style type="text/css">
+    @import url("http://fonts.googleapis.com/css?family=Germania+One|Shadows+Into+Light&display=swap");
+    body{
+         overflow:hidden;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin:0;
+         padding:0;
+         width:100%;
+         background-color:#ffffff;
+         
+         }
+         canvas, #instructions {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         }
+         
+    h1{
+      color:#0f0f0f;
+      text-decoration: none;
+      border-radius:0px;
+      border:0px;
+      font-family:  cursive;
+      font-size:50px;
+      margin:0px auto;
+      text-shadow:2px 2px #ff0000;
+      animation:a 3s linear infinite;
+    }
+    .copyright{
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    font-family:Ubuntu;
+    font-size:20px;
+    text-decoration:none;
+    }
+    .e{
+    color:#ffffff;
+    text-decoration:none;
+    font-family: 'Germania One', cursive;
+    font-size:225px;
+    }
+    @keyframes a{
+     3%{text-shadow:7px 7px 0px red;}
+    6%{text-shadow:-9px 4px 0px blue;transform:translate(4px,-10px) skewX(3240deg);}
+    7%{text-shadow:3px -4px 0px green;}
+    9%{text-shadow:0px 0px 3px rgba(5, 0, 0, 0.021);transform:translate(0px,0px) skewX(0deg);}
+    2% , 54%{transform:translateX(0px) skew(0deg);}
+    55%{transform:translate(-2px,6px) skew(-5530deg);}
+    56%{text-shadow:0px 0px 3px rgb(3, 3, 3);transform:translate(0px,0px) skew(0deg);}
+    57%{text-shadow:7px 7px 0px red;transform:translate(4px,-10px) skew(-70deg);}
+    58%{text-shadow:0px 0px 3px rgb(5, 5, 5);transform:translate(0px,0px) skew(0deg);}
+    62%{text-shadow:3px -4px 0px green;transform:translate(0px,20px) skew(0deg);}
+    63%{text-shadow:0px 0px 3px rgb(3, 3, 3);transform:translate(4px,-2px) skew(0deg);}
+    64%{transform:translate(1px,3px); skew(-230deg);}
+    65%{transform:translate(-7px,2px); skew(120deg);}
+    66%{transform:translate(0px,0px) skew(0deg);}
+    </style>
+    
+  	 </body>
+ </html>
+ 
